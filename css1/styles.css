@@ -1,0 +1,75 @@
+/* Style de base pour chaque zone d'événement */
+.eventZone {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Style des colonnes */
+.eventColumn {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Couleurs différentes pour chaque zone d'événement */
+#zoneClick { background-color: #e74c3c; }
+#zoneDoubleClick { background-color: #3498db; }
+#zoneMouseOver { background-color: #2ecc71; }
+#zoneMouseOut { background-color: #f39c12; }
+#zoneContextMenu { background-color: #9b59b6; }
+#zoneKeyDown { background-color: #1abc9c; }
+#zoneKeyUp { background-color: #e67e22; }
+#zoneMouseMove { background-color: #d35400; }
+#zoneFocus { background-color: #8e44ad; }
+#zoneBlur { background-color: #34495e; }
+
+/* Animations au survol et à l'activation */
+.eventZone:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.eventZone:active {
+    transform: translateX(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations par keyframes */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes moveUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+}
+
+/* Styles pour les événements focus et blur */
+.eventZone:focus {
+    outline: none;
+    border: 2px solid #8e44ad;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.8);
+}
+
+.eventZone:blur {
+    transform: scale(1);
+    box-shadow: none;
+}

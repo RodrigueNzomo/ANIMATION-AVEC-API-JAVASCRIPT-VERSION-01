@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations d'Événements avec JavaScript</title>
+    <link rel="stylesheet" href="css1/styles.css">
+</head>
+
+<body>
+    <h1>Présentation des Animations d'Événements</h1>
+    <p>Rodrigue Nzomo Nzogang</p>
+
+    <!-- Conteneur pour les zones avec événements -->
+    <div id="zonesContainer">
+        <!-- Première colonne de zones -->
+        <div class="eventColumn">
+            <div class="eventZone" data-event="click" id="zoneClick">
+                <div class="zone">Cliquez ici</div>
+            </div>
+            <div class="eventZone" data-event="dblclick" id="zoneDoubleClick">
+                <div class="zone">Double-cliquez ici</div>
+            </div>
+            <div class="eventZone" data-event="mouseover" id="zoneMouseOver">
+                <div class="zone">Survolez ici</div>
+            </div>
+            <div class="eventZone" data-event="mouseout" id="zoneMouseOut">
+                <div class="zone">Sortez de la zone ici</div>
+            </div>
+            <div class="eventZone" data-event="contextmenu" id="zoneContextMenu">
+                <div class="zone">Clic droit ici</div>
+            </div>
+        </div>
+
+        <!-- Deuxième colonne de zones -->
+        <div class="eventColumn">
+            <div class="eventZone" data-event="keydown" id="zoneKeyDown">
+                <div class="zone">Appuyez sur une touche</div>
+            </div>
+            <div class="eventZone" data-event="keyup" id="zoneKeyUp">
+                <div class="zone">Relâchez une touche</div>
+            </div>
+            <div class="eventZone" data-event="mousemove" id="zoneMouseMove">
+                <div class="zone">Déplacez la souris ici</div>
+            </div>
+            <div class="eventZone" data-event="focus" id="zoneFocus">
+                <div class="zone">Cliquez pour vous concentrer ici</div>
+            </div>
+            <div class="eventZone" data-event="blur" id="zoneBlur">
+                <div class="zone">Cliquez ailleurs pour désélectionner</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusion de la bibliothèque Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <!-- Fichier JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+    <script src="js1/scripts.js"></script>
+</body>
+
+</html>
